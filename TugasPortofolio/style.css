@@ -45,10 +45,51 @@ h1{
 .experience{
     padding: 30px;
     margin: 30px;
-    background-color: rgb(238, 251, 255);
+    background-color: rgb(197, 215, 222);
     border-radius: 20px;
 }
 .experience-item{
     padding: 10px;
     border-left: 1px solid rgba(38, 26, 209, 0.2);
 }
+/* Readmore */
+.container2{
+    width: 450px;
+    background: #fff;
+    padding: 20px;
+    margin:0 auto;
+    box-sizing: 0 0 5px rgba(0,0,0,0.5);
+
+}
+.container2 h2{
+    margin-bottom: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#check{
+    display: none;
+}
+.content{
+    display: none;
+}
+label{
+    display: inline-block;
+    margin-top: 15px;
+    color: #E03B8B;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+#check:checked~ .content{
+    display: block;
+}
+#check:checked~ label{
+visibility: hidden;
+}
+#check:checked~ label:after{
+    content:'Show Less';
+    display: block;
+    visibility: visible;
+}
+
+/* Image */
