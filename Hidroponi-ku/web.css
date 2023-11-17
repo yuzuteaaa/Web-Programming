@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300;400;600&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Archivo", sans-serif;
+}
+nav {
+  background-color: #698269;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 17px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+header {
+  position: relative;
+  overflow: hidden;
+  height: 680px;
+}
+
+header img {
+  width: 1472px;
+  height: 650px;
+  position: absolute;
+  z-index: -3;
+  filter: blur(8px);
+  -webkit-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+header h2 {
+  position: relative;
+  width: 500px;
+  position: relative;
+  margin-top: 190px;
+  margin-left: 60px;
+  font-family: "Archivo Black", sans-serif;
+  color: #f1dbbf;
+}
+
+header p {
+  width: 600px;
+  margin-top: 20px;
+  margin-left: 60px;
+  color: rgb(219, 221, 214);
+  font: 21px;
+}
+
+main {
+  box-shadow: 0 8px 40px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px sorgba(28, 19, 19, 0.65)8;
+  padding: 20px;
+  text-align: center;
+  background:#698269;
+  margin:0px 30px 10px 30px;
+}
+
+footer{
+    background-color: #698269;
+    padding: 30px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: larger;
+    font: bold;
+    text-align: center;
+    /* border: solid; */
+}
+
+
+.invest {
+  margin: auto;
+}
+
+.invest__head {
+  max-width: 70rem;
+}
+
+.invest__title {
+  font-size: 3.6rem;
+}
+
+.invest__description {
+  margin-top: 1.5rem;
+  color: #324148;
+  font-size: 1.8rem;
+}
+
+.invest__body {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.invest__item {
+  padding: 2.5rem;
+}
+
+.invest__item:nth-child(1) {
+  background: url("../img/investments/invest-1.png") no-repeat center/cover;
+}
+
+.invest__item:nth-child(2) {
+  background: url("../img/investments/invest-2.png") no-repeat center/cover;
+}
+
+.invest__item__subtitle {
+  color: #66BB6A;
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.invest__item__subtitle::after {
+  position: absolute;
+  content: '';
+  top: 3rem;
+  left: 0;
+  width: 5.6rem;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.invest__item__body {
+  margin: 5rem 0 2.5rem;
+}
+
+.invest__item__title {
+  color: #ffffff;
+  font-size: 3.1rem;
+  max-width: 30rem;
+}
+
+.invest__item_description {
+  font-size: 1.6rem;
+  color: #ffffff;
+  max-width: 30rem;
+}
+
+.btn__invest {
+  color: #66BB6A;
+  display: inline-block;
+  width: 20rem;
+  text-align: center;
+  box-shadow: 1px 10px 30px -10px #66bb6a;
+  /*
+    Button hover effect resource
+    https://codepen.io/alticreation/pen/zBZwOP
+    */
+  display: inline-block;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn__invest:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: -2;
+}
+
+.btn__invest:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #66BB6A;
+  transition: all .3s;
+  z-index: -1;
+}
+
+.btn__invest:hover {
+  color: #ffffff;
+}
+
+.btn__invest:hover:before {
+  width: 100%;
+}
+
+/*End Invest*/
+/*End How Is Works*/
+.how-is-works {
+  background: url("../img/how-is-works-bg.png") no-repeat;
+  background-color: #66BB6A;
+  margin: auto;
+}
+
+.works__content {
+  max-width: 70rem;
+  margin: auto;
+  color: #ffffff;
+  padding: 0 1.5rem;
+}
+
+.works__head {
+  text-align: center;
+}
+
+.works__title {
+  font-size: 3.6rem;
+}
+
+.works__description {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.works__body {
+  margin: 5rem 0 10rem;
+}
+
+.form_progressbar {
+  display: flex;
+  grid-column-gap: 13rem;
+}
+
+.progressbar__step {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 7.2rem;
+  height: 7.2rem;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.progressbar__step.active {
+  background-color: #ffffff;
+  color: #66BB6A;
+}
+
+.progressbar__step.active:not(:first-child)::after {
+  height: 5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: progressBarStepAnimate 0.5s linear forwards;
+}
+
+.progressbar__step:not(:first-child)::before, .progressbar__step:not(:first-child)::after {
+  position: absolute;
+  content: '';
+  right: 100%;
+  width: 13rem;
+  height: 1px;
+  background-color: #ffffff;
+  pointer-events: none;
+}
+
+@keyframes progressBarStepAnimate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.works__footer {
+  display: flex;
+  overflow: hidden;
+}
+
+.works__step__content {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  grid-gap: 2.5rem;
+  transition: .5s all linear;
+  padding: 3rem;
+  position: relative;
+  align-items: center;
+}
+
+.works__step__content::before {
+  position: absolute;
+  content: '';
+  left: 1.5rem;
+  top: 1.5rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  box-shadow: 0 1px 6px black;
+  border-radius: .8rem;
+}
+
+.works__step_title {
+  font-size: 2.4rem;
+  flex: 5;
+}
+
+.works__step_description {
+  flex: 6;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+/*End How Is Works*/
